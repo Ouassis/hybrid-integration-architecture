@@ -1,4 +1,3 @@
-# Local environment and secret files
 .env
 .env.*
 !.env.example
@@ -8,8 +7,6 @@
 *.pfx
 secrets/
 credentials/
-
-# Logs and generated output
 *.log
 *.tmp
 .DS_Store
