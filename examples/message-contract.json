@@ -1,0 +1,13 @@
+{
+  "messageId": "example-message-0001",
+  "correlationId": "example-correlation-0001",
+  "contractName": "BusinessEvent",
+  "contractVersion": "1.0",
+  "occurredAt": "2026-01-01T12:00:00Z",
+  "sourceSystem": "SAP-SOURCE-ALIAS",
+  "eventType": "BusinessObjectChanged",
+  "businessKey": "SYNTHETIC-KEY-001",
+  "payload": {
+    "exampleField": "synthetic-value"
+  }
+}
