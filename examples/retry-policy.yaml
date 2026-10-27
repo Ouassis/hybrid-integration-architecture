@@ -1,0 +1,21 @@
+# Illustrative template only. Tune for the actual integration and failure modes.
+retry:
+  enabled: true
+  maxAttempts: 4
+  strategy: exponential-backoff-with-jitter
+  initialDelay: PT1S
+  maxDelay: PT20S
+  retryableCategories:
+    - transient-network
+    - throttled
+    - temporary-unavailable
+  nonRetryableCategories:
+    - validation
+    - authentication
+    - authorization
+    - permanent-business-rejection
+  uncertainOutcome:
+    action: reconcile-before-retry
+  deadLetter:
+    enabled: true
+    owner: "ASSIGN-INTEGRATION-OWNER"
