@@ -7,7 +7,5 @@
   "sourceSystem": "SAP-SOURCE-ALIAS",
   "eventType": "BusinessObjectChanged",
   "businessKey": "SYNTHETIC-KEY-001",
-  "payload": {
-    "exampleField": "synthetic-value"
-  }
+  "payload": { "exampleField": "synthetic-value" }
 }
